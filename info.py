@@ -25,10 +25,10 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-OWNER_ID = environ.get('OWNER_ID', '6497757690')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '25282308'))
+API_HASH = environ.get('API_HASH', '3f5c041738ce25f3942e59e809ab838a')
+OWNER_ID = environ.get('OWNER_ID', '6826356197')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7057888802:AAEvFAO4WXZZ4S23dTjDbltk8KqF2b3l6uE")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -54,8 +54,8 @@ PREFIX = environ.get("PREFIX", "/")
 CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1001953724858"))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690 5115691197').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6826356197').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002025658212 -1002020845252').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6497757690').split()]
@@ -70,7 +70,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dipeshxyzyadav:ws1SIxbNdxfVwaSb@cluster0.b7mhopj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Lucy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -108,13 +108,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Lucy_Filter_bot")
-BOT_NAME = environ.get("BOT_NAME", "𝐋ᴜᴄʏ")
-BOT_ID = environ.get("BOT_ID", "6040310745")
-S_GROUP = environ.get('S_GROUP', "weebs_support")
-S_CHANNEL = environ.get('S_CHANNEL', "codeflix_bots")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CodeFlix_Bots')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/team_netflix')
+BOT_USERNAME = environ.get("BOT_USERNAME", "Isha_tube_bot")
+BOT_NAME = environ.get("BOT_NAME", "Isha bot")
+BOT_ID = environ.get("BOT_ID", "7057888802")
+S_GROUP = environ.get('S_GROUP', "isha_movies")
+S_CHANNEL = environ.get('S_CHANNEL', "sakshi_fanbase")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/isha_movies')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/sakshi_fanbase')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_Download_7x/32') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ᴄᴏᴅᴇғʟɪx ʙᴏᴛs')
