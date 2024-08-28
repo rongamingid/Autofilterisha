@@ -107,7 +107,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "1010")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Isha_tube_bot")
 BOT_NAME = environ.get("BOT_NAME", "Isha bot")
 BOT_ID = environ.get("BOT_ID", "7057888802")
@@ -144,7 +144,7 @@ QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
 
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
