@@ -112,3 +112,5 @@ lexica-api
 MukeshAPI
 httpx
 HorridAPI
+fuzzywuzzy
+python-Levenshtein
